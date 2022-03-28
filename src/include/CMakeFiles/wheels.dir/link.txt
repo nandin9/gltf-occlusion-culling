@@ -1,0 +1,2 @@
+C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\ar.exe qc libwheels.a CMakeFiles/wheels.dir/Camera.cpp.obj CMakeFiles/wheels.dir/Pyramid.cpp.obj CMakeFiles/wheels.dir/Scene.cpp.obj CMakeFiles/wheels.dir/Timer.cpp.obj CMakeFiles/wheels.dir/Triangle.cpp.obj CMakeFiles/wheels.dir/Zbuf.cpp.obj CMakeFiles/wheels.dir/global.cpp.obj CMakeFiles/wheels.dir/shaders.cpp.obj
+C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\ranlib.exe libwheels.a

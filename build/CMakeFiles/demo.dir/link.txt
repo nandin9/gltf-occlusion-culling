@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\demo.dir/objects.a
+C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\ar.exe qc CMakeFiles\demo.dir/objects.a @CMakeFiles\demo.dir\objects1.rsp
+C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe -g -Wl,--whole-archive CMakeFiles\demo.dir/objects.a -Wl,--no-whole-archive -o demo.exe -Wl,--out-implib,libdemo.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\demo.dir\linklibs.rsp

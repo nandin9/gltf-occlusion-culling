@@ -1,0 +1,67 @@
+[
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -DmyJNI_EXPORTS @CMakeFiles/myJNI.dir/includes_CXX.rsp -g -o CMakeFiles\\myJNI.dir\\jsoncpp\\json_reader.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\jsoncpp\\json_reader.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/jsoncpp/json_reader.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -DmyJNI_EXPORTS @CMakeFiles/myJNI.dir/includes_CXX.rsp -g -o CMakeFiles\\myJNI.dir\\jsoncpp\\json_value.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\jsoncpp\\json_value.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/jsoncpp/json_value.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe -DmyJNI_EXPORTS @CMakeFiles/myJNI.dir/includes_CXX.rsp -g -o CMakeFiles\\myJNI.dir\\jsoncpp\\json_writer.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\jsoncpp\\json_writer.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/jsoncpp/json_writer.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -o CMakeFiles\\demo.dir\\src\\main.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\src\\main.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/src/main.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/demo.dir/includes_CXX.rsp -g -o CMakeFiles\\demo.dir\\src\\gltfLoader\\gltf.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\src\\gltfLoader\\gltf.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/src/gltfLoader/gltf.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/wheels.dir/includes_CXX.rsp -g -o CMakeFiles\\wheels.dir\\Camera.cpp.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\src\\include\\Camera.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/src/include/Camera.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/wheels.dir/includes_CXX.rsp -g -o CMakeFiles\\wheels.dir\\Pyramid.cpp.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\src\\include\\Pyramid.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/src/include/Pyramid.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/wheels.dir/includes_CXX.rsp -g -o CMakeFiles\\wheels.dir\\Scene.cpp.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\src\\include\\Scene.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/src/include/Scene.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/wheels.dir/includes_CXX.rsp -g -o CMakeFiles\\wheels.dir\\Timer.cpp.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\src\\include\\Timer.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/src/include/Timer.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/wheels.dir/includes_CXX.rsp -g -o CMakeFiles\\wheels.dir\\Triangle.cpp.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\src\\include\\Triangle.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/src/include/Triangle.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/wheels.dir/includes_CXX.rsp -g -o CMakeFiles\\wheels.dir\\Zbuf.cpp.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\src\\include\\Zbuf.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/src/include/Zbuf.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/wheels.dir/includes_CXX.rsp -g -o CMakeFiles\\wheels.dir\\global.cpp.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\src\\include\\global.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/src/include/global.cpp"
+},
+{
+  "directory": "C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include",
+  "command": "C:\\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/wheels.dir/includes_CXX.rsp -g -o CMakeFiles\\wheels.dir\\shaders.cpp.obj -c C:\\Users\\28503\\Desktop\\gltfLoader-Test1\\src\\include\\shaders.cpp",
+  "file": "C:/Users/28503/Desktop/gltfLoader-Test1/src/include/shaders.cpp"
+}
+]
