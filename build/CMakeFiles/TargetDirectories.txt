@@ -1,7 +1,0 @@
-C:/Users/28503/Desktop/gltfLoader-Test1/build/CMakeFiles/myJNI.dir
-C:/Users/28503/Desktop/gltfLoader-Test1/build/CMakeFiles/demo.dir
-C:/Users/28503/Desktop/gltfLoader-Test1/build/CMakeFiles/edit_cache.dir
-C:/Users/28503/Desktop/gltfLoader-Test1/build/CMakeFiles/rebuild_cache.dir
-C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include/CMakeFiles/rebuild_cache.dir
-C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include/CMakeFiles/wheels.dir
-C:/Users/28503/Desktop/gltfLoader-Test1/build/src/include/CMakeFiles/edit_cache.dir
