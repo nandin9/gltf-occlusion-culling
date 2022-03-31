@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\28503\Desktop\gltfLoader-Test1
+CMAKE_SOURCE_DIR = C:\Users\28503\Desktop\gltf-occlusionculling
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\28503\Desktop\gltfLoader-Test1\build
+CMAKE_BINARY_DIR = C:\Users\28503\Desktop\gltf-occlusionculling\build2
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles C:\Users\28503\Desktop\gltfLoader-Test1\build\src\include\\CMakeFiles\progress.marks
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles 0
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles C:\Users\28503\Desktop\gltf-occlusionculling\build2\src\include\\CMakeFiles\progress.marks
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/clean
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,22 +102,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/preinstall
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/preinstall
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/include/CMakeFiles/wheels.dir/rule:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/CMakeFiles/wheels.dir/rule
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/CMakeFiles/wheels.dir/rule
 .PHONY : src/include/CMakeFiles/wheels.dir/rule
 
 # Convenience name for target.
@@ -126,7 +126,7 @@ wheels: src/include/CMakeFiles/wheels.dir/rule
 
 # fast build rule for target.
 wheels/fast:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/build
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/build
 .PHONY : wheels/fast
 
 Camera.obj: Camera.cpp.obj
@@ -134,7 +134,7 @@ Camera.obj: Camera.cpp.obj
 
 # target to build an object file
 Camera.cpp.obj:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Camera.cpp.obj
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Camera.cpp.obj
 .PHONY : Camera.cpp.obj
 
 Camera.i: Camera.cpp.i
@@ -142,7 +142,7 @@ Camera.i: Camera.cpp.i
 
 # target to preprocess a source file
 Camera.cpp.i:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Camera.cpp.i
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Camera.cpp.i
 .PHONY : Camera.cpp.i
 
 Camera.s: Camera.cpp.s
@@ -150,7 +150,7 @@ Camera.s: Camera.cpp.s
 
 # target to generate assembly for a file
 Camera.cpp.s:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Camera.cpp.s
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Camera.cpp.s
 .PHONY : Camera.cpp.s
 
 Pyramid.obj: Pyramid.cpp.obj
@@ -158,7 +158,7 @@ Pyramid.obj: Pyramid.cpp.obj
 
 # target to build an object file
 Pyramid.cpp.obj:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Pyramid.cpp.obj
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Pyramid.cpp.obj
 .PHONY : Pyramid.cpp.obj
 
 Pyramid.i: Pyramid.cpp.i
@@ -166,7 +166,7 @@ Pyramid.i: Pyramid.cpp.i
 
 # target to preprocess a source file
 Pyramid.cpp.i:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Pyramid.cpp.i
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Pyramid.cpp.i
 .PHONY : Pyramid.cpp.i
 
 Pyramid.s: Pyramid.cpp.s
@@ -174,7 +174,7 @@ Pyramid.s: Pyramid.cpp.s
 
 # target to generate assembly for a file
 Pyramid.cpp.s:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Pyramid.cpp.s
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Pyramid.cpp.s
 .PHONY : Pyramid.cpp.s
 
 Scene.obj: Scene.cpp.obj
@@ -182,7 +182,7 @@ Scene.obj: Scene.cpp.obj
 
 # target to build an object file
 Scene.cpp.obj:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Scene.cpp.obj
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Scene.cpp.obj
 .PHONY : Scene.cpp.obj
 
 Scene.i: Scene.cpp.i
@@ -190,7 +190,7 @@ Scene.i: Scene.cpp.i
 
 # target to preprocess a source file
 Scene.cpp.i:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Scene.cpp.i
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Scene.cpp.i
 .PHONY : Scene.cpp.i
 
 Scene.s: Scene.cpp.s
@@ -198,7 +198,7 @@ Scene.s: Scene.cpp.s
 
 # target to generate assembly for a file
 Scene.cpp.s:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Scene.cpp.s
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Scene.cpp.s
 .PHONY : Scene.cpp.s
 
 Timer.obj: Timer.cpp.obj
@@ -206,7 +206,7 @@ Timer.obj: Timer.cpp.obj
 
 # target to build an object file
 Timer.cpp.obj:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Timer.cpp.obj
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Timer.cpp.obj
 .PHONY : Timer.cpp.obj
 
 Timer.i: Timer.cpp.i
@@ -214,7 +214,7 @@ Timer.i: Timer.cpp.i
 
 # target to preprocess a source file
 Timer.cpp.i:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Timer.cpp.i
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Timer.cpp.i
 .PHONY : Timer.cpp.i
 
 Timer.s: Timer.cpp.s
@@ -222,7 +222,7 @@ Timer.s: Timer.cpp.s
 
 # target to generate assembly for a file
 Timer.cpp.s:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Timer.cpp.s
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Timer.cpp.s
 .PHONY : Timer.cpp.s
 
 Triangle.obj: Triangle.cpp.obj
@@ -230,7 +230,7 @@ Triangle.obj: Triangle.cpp.obj
 
 # target to build an object file
 Triangle.cpp.obj:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Triangle.cpp.obj
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Triangle.cpp.obj
 .PHONY : Triangle.cpp.obj
 
 Triangle.i: Triangle.cpp.i
@@ -238,7 +238,7 @@ Triangle.i: Triangle.cpp.i
 
 # target to preprocess a source file
 Triangle.cpp.i:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Triangle.cpp.i
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Triangle.cpp.i
 .PHONY : Triangle.cpp.i
 
 Triangle.s: Triangle.cpp.s
@@ -246,7 +246,7 @@ Triangle.s: Triangle.cpp.s
 
 # target to generate assembly for a file
 Triangle.cpp.s:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Triangle.cpp.s
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Triangle.cpp.s
 .PHONY : Triangle.cpp.s
 
 Zbuf.obj: Zbuf.cpp.obj
@@ -254,7 +254,7 @@ Zbuf.obj: Zbuf.cpp.obj
 
 # target to build an object file
 Zbuf.cpp.obj:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Zbuf.cpp.obj
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Zbuf.cpp.obj
 .PHONY : Zbuf.cpp.obj
 
 Zbuf.i: Zbuf.cpp.i
@@ -262,7 +262,7 @@ Zbuf.i: Zbuf.cpp.i
 
 # target to preprocess a source file
 Zbuf.cpp.i:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Zbuf.cpp.i
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Zbuf.cpp.i
 .PHONY : Zbuf.cpp.i
 
 Zbuf.s: Zbuf.cpp.s
@@ -270,7 +270,7 @@ Zbuf.s: Zbuf.cpp.s
 
 # target to generate assembly for a file
 Zbuf.cpp.s:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Zbuf.cpp.s
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/Zbuf.cpp.s
 .PHONY : Zbuf.cpp.s
 
 global.obj: global.cpp.obj
@@ -278,7 +278,7 @@ global.obj: global.cpp.obj
 
 # target to build an object file
 global.cpp.obj:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/global.cpp.obj
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/global.cpp.obj
 .PHONY : global.cpp.obj
 
 global.i: global.cpp.i
@@ -286,7 +286,7 @@ global.i: global.cpp.i
 
 # target to preprocess a source file
 global.cpp.i:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/global.cpp.i
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/global.cpp.i
 .PHONY : global.cpp.i
 
 global.s: global.cpp.s
@@ -294,7 +294,7 @@ global.s: global.cpp.s
 
 # target to generate assembly for a file
 global.cpp.s:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/global.cpp.s
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/global.cpp.s
 .PHONY : global.cpp.s
 
 shaders.obj: shaders.cpp.obj
@@ -302,7 +302,7 @@ shaders.obj: shaders.cpp.obj
 
 # target to build an object file
 shaders.cpp.obj:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/shaders.cpp.obj
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/shaders.cpp.obj
 .PHONY : shaders.cpp.obj
 
 shaders.i: shaders.cpp.i
@@ -310,7 +310,7 @@ shaders.i: shaders.cpp.i
 
 # target to preprocess a source file
 shaders.cpp.i:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/shaders.cpp.i
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/shaders.cpp.i
 .PHONY : shaders.cpp.i
 
 shaders.s: shaders.cpp.s
@@ -318,7 +318,7 @@ shaders.s: shaders.cpp.s
 
 # target to generate assembly for a file
 shaders.cpp.s:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/shaders.cpp.s
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/shaders.cpp.s
 .PHONY : shaders.cpp.s
 
 # Help Target
@@ -365,6 +365,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\28503\Desktop\gltfLoader-Test1\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\28503\Desktop\gltf-occlusionculling\build2 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -36,3 +36,8 @@ build/CMakeFiles/#
 build/include/#
 build/src/#
 build/.cmake/#
+*.txt
+*.cmake
+*.gltf
+*.bin
+*.json

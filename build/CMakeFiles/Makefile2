@@ -53,10 +53,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\28503\Desktop\gltfLoader-Test1
+CMAKE_SOURCE_DIR = C:\Users\28503\Desktop\gltf-occlusionculling
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\28503\Desktop\gltfLoader-Test1\build
+CMAKE_BINARY_DIR = C:\Users\28503\Desktop\gltf-occlusionculling\build2
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -99,14 +99,14 @@ src/include/clean: src/include/CMakeFiles/wheels.dir/clean
 CMakeFiles/myJNI.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myJNI.dir\build.make CMakeFiles/myJNI.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\myJNI.dir\build.make CMakeFiles/myJNI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles --progress-num=4,5,6,7 "Built target myJNI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles --progress-num=4,5,6,7 "Built target myJNI"
 .PHONY : CMakeFiles/myJNI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/myJNI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/myJNI.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles 0
 .PHONY : CMakeFiles/myJNI.dir/rule
 
 # Convenience name for target.
@@ -126,14 +126,14 @@ CMakeFiles/demo.dir/all: CMakeFiles/myJNI.dir/all
 CMakeFiles/demo.dir/all: src/include/CMakeFiles/wheels.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles --progress-num=1,2,3 "Built target demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles --progress-num=1,2,3 "Built target demo"
 .PHONY : CMakeFiles/demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/demo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles 0
 .PHONY : CMakeFiles/demo.dir/rule
 
 # Convenience name for target.
@@ -152,14 +152,14 @@ CMakeFiles/demo.dir/clean:
 src/include/CMakeFiles/wheels.dir/all:
 	$(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/depend
 	$(MAKE) $(MAKESILENT) -f src\include\CMakeFiles\wheels.dir\build.make src/include/CMakeFiles/wheels.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16 "Built target wheels"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16 "Built target wheels"
 .PHONY : src/include/CMakeFiles/wheels.dir/all
 
 # Build rule for subdir invocation for target.
 src/include/CMakeFiles/wheels.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/include/CMakeFiles/wheels.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles 0
 .PHONY : src/include/CMakeFiles/wheels.dir/rule
 
 # Convenience name for target.

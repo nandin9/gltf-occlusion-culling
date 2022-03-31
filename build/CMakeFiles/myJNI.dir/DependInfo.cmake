@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/28503/Desktop/gltfLoader-Test1/jsoncpp/json_reader.cpp" "CMakeFiles/myJNI.dir/jsoncpp/json_reader.obj" "gcc" "CMakeFiles/myJNI.dir/jsoncpp/json_reader.obj.d"
-  "C:/Users/28503/Desktop/gltfLoader-Test1/jsoncpp/json_value.cpp" "CMakeFiles/myJNI.dir/jsoncpp/json_value.obj" "gcc" "CMakeFiles/myJNI.dir/jsoncpp/json_value.obj.d"
-  "C:/Users/28503/Desktop/gltfLoader-Test1/jsoncpp/json_writer.cpp" "CMakeFiles/myJNI.dir/jsoncpp/json_writer.obj" "gcc" "CMakeFiles/myJNI.dir/jsoncpp/json_writer.obj.d"
+  "C:/Users/28503/Desktop/gltf-occlusionculling/jsoncpp/json_reader.cpp" "CMakeFiles/myJNI.dir/jsoncpp/json_reader.obj" "gcc" "CMakeFiles/myJNI.dir/jsoncpp/json_reader.obj.d"
+  "C:/Users/28503/Desktop/gltf-occlusionculling/jsoncpp/json_value.cpp" "CMakeFiles/myJNI.dir/jsoncpp/json_value.obj" "gcc" "CMakeFiles/myJNI.dir/jsoncpp/json_value.obj.d"
+  "C:/Users/28503/Desktop/gltf-occlusionculling/jsoncpp/json_writer.cpp" "CMakeFiles/myJNI.dir/jsoncpp/json_writer.obj" "gcc" "CMakeFiles/myJNI.dir/jsoncpp/json_writer.obj.d"
   )
 
 # Targets to which this target links.

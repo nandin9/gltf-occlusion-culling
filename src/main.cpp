@@ -16,9 +16,94 @@
 
 using namespace std;
 
+void outputCulledModel(gltf::Asset &asset, Zbuf zbuf, objl::Loader loader) {
+    
+    ofstream fout;
+    fout.open("./sceneTestCulled.bin", ios::out|ios::binary);        // 模型被剔除部分的bin文件
+
+    int byteLengthIndexCulled = 0, byteLengthVertexCulled = 0;        // 被剔除部分的bytelength
+    for(int i=0; i<zbuf.scene.realworld_triangles.size(); i++){
+        if(zbuf.scene.realworld_triangles[i].deleted != 0){
+            // float a = zbuf.scene.realworld_triangles[i].a()[0] ;
+            float a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_a].Position.X ;
+            fout.write((char*)&a,sizeof(float));
+            a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_a].Position.Y ;
+            fout.write((char*)&a,sizeof(float));
+            a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_a].Position.Z ;
+            fout.write((char*)&a,sizeof(float));
+            a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_b].Position.X ;
+            fout.write((char*)&a,sizeof(float));
+            a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_b].Position.Y ;
+            fout.write((char*)&a,sizeof(float));
+            a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_b].Position.Z ;
+            fout.write((char*)&a,sizeof(float));
+            a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_c].Position.X ;
+            fout.write((char*)&a,sizeof(float));
+            a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_c].Position.Y ;
+            fout.write((char*)&a,sizeof(float));
+            a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_c].Position.Z ;
+            fout.write((char*)&a,sizeof(float));
+            byteLengthVertexCulled += sizeof(float) * 9 ;
+        }
+    }
+
+    int IndicesAttrIndex = 0 ,meshesIndex = 0 , k= 0;  // k为存进bin的索引
+    int trianglesN = 0 ,l = 0 ;
+    // asset.newMeshes.resize(asset.meshesLength.size()) ;
+    msg("asset.newMeshes.size(): %d",asset.newMeshes.size());  
+    bool FLAG = false ;
+    int newMeshesNum = 0 ;
+
+    for(int i=0 ,j = 0; i<zbuf.scene.realworld_triangles.size(); i++){
+        FLAG = false ;
+        if(trianglesN == asset.meshesLength[j] ||  i==zbuf.scene.realworld_triangles.size()-1){
+            if(newMeshesNum != 0){
+                // asset.newMeshes[meshesIndex].name = asset.meshesName[meshesIndex] ;
+                // asset.newMeshes[meshesIndex].primitives.resize(1);
+                // asset.newMeshes[meshesIndex].primitives[0].indices = IndicesAttrIndex++ ;
+                // asset.newMeshes[meshesIndex].primitives[0].attributes["POSITION"] = IndicesAttrIndex++ ;
+                if(i != zbuf.scene.realworld_triangles.size()-1 ){
+                    k = 0 ;   //重新开始索引
+                    trianglesN = 0;
+                    meshesIndex ++ ;
+                    j++ ;
+                    FLAG = true ;
+                } 
+            }else{
+                trianglesN = 0;
+                j ++ ;
+            }
+        }
+        trianglesN ++ ;
+
+        if(FLAG || i==zbuf.scene.realworld_triangles.size()-1){
+                // asset.newmeshesLength.push_back(newMeshesNum);
+                msg("%d newMeshes Tris ",newMeshesNum);
+                newMeshesNum = 0 ;
+        }
+        if(i==0)
+            msg("%d deleted?", zbuf.scene.realworld_triangles[i].deleted) ;
+        if(zbuf.scene.realworld_triangles[i].deleted != 0){
+            
+            newMeshesNum ++ ;
+            // uint16_t index = zbuf.scene.realworld_triangles[i].index_a + 1 ; 
+            uint32_t index = k ; 
+            fout.write((char*)&index,sizeof(uint32_t));  
+            index = k + 1 ;
+            fout.write((char*)&index,sizeof(uint32_t));  
+            index = k + 2 ;
+            fout.write((char*)&index,sizeof(uint32_t));
+            k += 3 ;
+            byteLengthIndexCulled += sizeof(uint32_t) * 3 ;
+        }
+    }
+
+    fout.close();
+}
+
 void occlusionCulling(gltf::Asset &asset) {
 
-     objl::Loader loader;
+    objl::Loader loader;
     if (!loader.LoadFile("./scene.obj")) {
         cout<<"objfile cannot loaded..."<<endl;
     }
@@ -88,38 +173,30 @@ void occlusionCulling(gltf::Asset &asset) {
 
     msg("%d 个 meshes ",asset.meshesLength.size());
     msg("%d 个 meshes ",asset.meshesName.size());
-    
+
     fstream fout ;
-    fout.open("./sceneTest.bin",ios::out|ios::binary);
-    // std::ofstream fout("./sceneTest.bin", ios::out|ios::binary );
-    int byteLengthIndex = 0 ,byteLengthVertex = 0;
+    fout.open("./sceneTest.bin", ios::out|ios::binary);               // 模型剩余部分的bin文件
+    int byteLengthIndex = 0 , byteLengthVertex = 0;                   // 剩余部分的byteLength
+    
     for(int i=0; i<zbuf.scene.realworld_triangles.size(); i++){
         if(zbuf.scene.realworld_triangles[i].deleted == 0){
             // float a = zbuf.scene.realworld_triangles[i].a()[0] ;
             float a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_a].Position.X ;
             fout.write((char*)&a,sizeof(float));
-            // a = zbuf.scene.realworld_triangles[i].a()[1] ;
             a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_a].Position.Y ;
             fout.write((char*)&a,sizeof(float));
-            // a = zbuf.scene.realworld_triangles[i].a()[2] ;
             a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_a].Position.Z ;
             fout.write((char*)&a,sizeof(float));
-            // a = zbuf.scene.realworld_triangles[i].b()[0] ;
             a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_b].Position.X ;
             fout.write((char*)&a,sizeof(float));
-            // a = zbuf.scene.realworld_triangles[i].b()[1] ;
             a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_b].Position.Y ;
             fout.write((char*)&a,sizeof(float));
-            // a = zbuf.scene.realworld_triangles[i].b()[2] ;
             a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_b].Position.Z ;
             fout.write((char*)&a,sizeof(float));
-            // a = zbuf.scene.realworld_triangles[i].c()[0] ;
             a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_c].Position.X ;
             fout.write((char*)&a,sizeof(float));
-            // a = zbuf.scene.realworld_triangles[i].c()[1] ;
             a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_c].Position.Y ;
             fout.write((char*)&a,sizeof(float));
-            // a = zbuf.scene.realworld_triangles[i].c()[2] ;
             a = loader.LoadedMeshes[0].Vertices[zbuf.scene.realworld_triangles[i].index_c].Position.Z ;
             fout.write((char*)&a,sizeof(float));
             byteLengthVertex += sizeof(float) * 9 ;
@@ -182,9 +259,9 @@ void occlusionCulling(gltf::Asset &asset) {
             k += 3 ;
             byteLengthIndex += sizeof(uint32_t) * 3 ;
         }
-
         
     }
+
 
     // new bufferviews
     asset.newBufferViews.resize(2);
@@ -228,8 +305,10 @@ void occlusionCulling(gltf::Asset &asset) {
         msg("%f %f %f",zbuf.scene.realworld_triangles[i].c()[0],zbuf.scene.realworld_triangles[i].c()[1],zbuf.scene.realworld_triangles[i].c()[2]) ;
         msg("%d %d %d\n",zbuf.scene.realworld_triangles[i].index_a,zbuf.scene.realworld_triangles[i].index_b,zbuf.scene.realworld_triangles[i].index_c) ;
     }
-  
+
     fout.close();
+
+    outputCulledModel(asset, zbuf, loader);
 
 }
 
@@ -244,38 +323,41 @@ int main(int argc, char *argv[]){
     gltf::Asset asset ;
     asset = gltf::load(modelName);
 
-    cout<<asset.dirName<<endl<<asset.metadata.generator<<endl<<asset.metadata.version<<endl;
-    // nodes test
-    cout<<"nodes: "<<asset.scenes[0].nodes[0]<<endl;
-    // meshes test
-    cout<<"meshes test:"<< asset.meshes.size()<< "  "<< asset.meshes[0].primitives.size()<<"  "<<endl;
-    cout<<asset.meshes[0].primitives[0].indices<< "  "<<asset.meshes[0].primitives[0].attributes["POSITION"] <<endl;
-    // nodes test
-    cout<<"\nnodes test:\n"<<asset.nodes.size()<<endl;
-    for(int i=0;i<asset.nodes[0].children.size();i++)
-        cout<<asset.nodes[0].children[i]<< " ";
+    // cout<<asset.dirName<<endl<<asset.metadata.generator<<endl<<asset.metadata.version<<endl;
+    // // nodes test
+    // cout<<"nodes: "<<asset.scenes[0].nodes[0]<<endl;
+    // // meshes test
+    // cout<<"meshes test:"<< asset.meshes.size()<< "  "<< asset.meshes[0].primitives.size()<<"  "<<endl;
+    // cout<<asset.meshes[0].primitives[0].indices<< "  "<<asset.meshes[0].primitives[0].attributes["POSITION"] <<endl;
+    // // nodes test
+    // cout<<"\nnodes test:\n"<<asset.nodes.size()<<endl;
+    // for(int i=0;i<asset.nodes[0].children.size();i++)
+    //     cout<<asset.nodes[0].children[i]<< " ";
 
-    // Buffers & BufferViews test
-    cout<<"\nBuffers & BufferViews test" <<endl ;
-    cout<<"uri: "<<asset.buffers[0].uri<<endl;
-    cout<<"ByteLength: "<<asset.buffers[0].byteLength<<endl;
-    cout<<"bufferView.size: "<<asset.bufferViews.size()<<endl;
-    for(int i=0;i<asset.bufferViews.size();i++){
-        cout<<asset.bufferViews[i].byteLength<<" "<<asset.bufferViews[i].target<<endl;
-    }
+    // // Buffers & BufferViews test
+    // cout<<"\nBuffers & BufferViews test" <<endl ;
+    // cout<<"uri: "<<asset.buffers[0].uri<<endl;
+    // cout<<"ByteLength: "<<asset.buffers[0].byteLength<<endl;
+    // cout<<"bufferView.size: "<<asset.bufferViews.size()<<endl;
+    // for(int i=0;i<asset.bufferViews.size();i++){
+    //     cout<<asset.bufferViews[i].byteLength<<" "<<asset.bufferViews[i].target<<endl;
+    // }
 
-    // accessors 
-    cout<<"\naccessors test\n";
-    cout<<asset.accessors.size();
-    for(int i=0;i<asset.accessors.size();i++){
-        cout<<asset.accessors[i].componentType<<" "<<asset.accessors[i].count<<endl;
-    }
+    // // accessors 
+    // cout<<"\naccessors test\n";
+    // cout<<asset.accessors.size();
+    // for(int i=0;i<asset.accessors.size();i++){
+    //     cout<<asset.accessors[i].componentType<<" "<<asset.accessors[i].count<<endl;
+    // }
 
-    cout<<"\n================================"<<endl;
+    // cout<<"\n================================"<<endl;
     
     occlusionCulling(asset);   // 处理遮挡剔除并输出'.bin'文件
 
-    JSON::exportGLTF(asset);   // 输出'.gltf'文件
+    cout<<"aaaaa"<<endl;
+    cout<<"bbbbb"<<endl;
+
+    // JSON::exportGLTF(asset);   // 输出'.gltf'文件
 
     return 0;
 }

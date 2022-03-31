@@ -221,6 +221,12 @@ namespace gltf{
         std::vector<newBufferView> newBufferViews;
         std::vector<newAccessor> newAccessors;
         std::vector<newMesh> newMeshes;
+        // 被剔除部分
+        int newBufferLength_C = 0;
+        std::vector<int> newmeshesLength_C ;
+        std::vector<newBufferView> newBufferViews_C;
+        std::vector<newAccessor> newAccessors_C;
+        std::vector<newMesh> newMeshes_C;
     };
     
 

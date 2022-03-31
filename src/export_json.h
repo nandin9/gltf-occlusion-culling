@@ -107,12 +107,7 @@ namespace JSON{
         // textures
         // images
         // samplers
-        
 
-
-
-
-        
 
         Json::StyledWriter sw;
 	    // cout << sw.write(root) << endl;

@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\28503\Desktop\gltfLoader-Test1
+CMAKE_SOURCE_DIR = C:\Users\28503\Desktop\gltf-occlusionculling
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\28503\Desktop\gltfLoader-Test1\build
+CMAKE_BINARY_DIR = C:\Users\28503\Desktop\gltf-occlusionculling\build2
 
 # Include any dependencies generated for this target.
 include CMakeFiles/demo.dir/depend.make
@@ -72,31 +72,31 @@ CMakeFiles/demo.dir/src/main.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/src/main.obj: CMakeFiles/demo.dir/includes_CXX.rsp
 CMakeFiles/demo.dir/src/main.obj: ../src/main.cpp
 CMakeFiles/demo.dir/src/main.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/src/main.obj"
-	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/src/main.obj -MF CMakeFiles\demo.dir\src\main.obj.d -o CMakeFiles\demo.dir\src\main.obj -c C:\Users\28503\Desktop\gltfLoader-Test1\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/src/main.obj"
+	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/src/main.obj -MF CMakeFiles\demo.dir\src\main.obj.d -o CMakeFiles\demo.dir\src\main.obj -c C:\Users\28503\Desktop\gltf-occlusionculling\src\main.cpp
 
 CMakeFiles/demo.dir/src/main.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/src/main.i"
-	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\28503\Desktop\gltfLoader-Test1\src\main.cpp > CMakeFiles\demo.dir\src\main.i
+	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\28503\Desktop\gltf-occlusionculling\src\main.cpp > CMakeFiles\demo.dir\src\main.i
 
 CMakeFiles/demo.dir/src/main.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/src/main.s"
-	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\28503\Desktop\gltfLoader-Test1\src\main.cpp -o CMakeFiles\demo.dir\src\main.s
+	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\28503\Desktop\gltf-occlusionculling\src\main.cpp -o CMakeFiles\demo.dir\src\main.s
 
 CMakeFiles/demo.dir/src/gltfLoader/gltf.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/src/gltfLoader/gltf.obj: CMakeFiles/demo.dir/includes_CXX.rsp
 CMakeFiles/demo.dir/src/gltfLoader/gltf.obj: ../src/gltfLoader/gltf.cpp
 CMakeFiles/demo.dir/src/gltfLoader/gltf.obj: CMakeFiles/demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/demo.dir/src/gltfLoader/gltf.obj"
-	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/src/gltfLoader/gltf.obj -MF CMakeFiles\demo.dir\src\gltfLoader\gltf.obj.d -o CMakeFiles\demo.dir\src\gltfLoader\gltf.obj -c C:\Users\28503\Desktop\gltfLoader-Test1\src\gltfLoader\gltf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/demo.dir/src/gltfLoader/gltf.obj"
+	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/demo.dir/src/gltfLoader/gltf.obj -MF CMakeFiles\demo.dir\src\gltfLoader\gltf.obj.d -o CMakeFiles\demo.dir\src\gltfLoader\gltf.obj -c C:\Users\28503\Desktop\gltf-occlusionculling\src\gltfLoader\gltf.cpp
 
 CMakeFiles/demo.dir/src/gltfLoader/gltf.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/src/gltfLoader/gltf.i"
-	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\28503\Desktop\gltfLoader-Test1\src\gltfLoader\gltf.cpp > CMakeFiles\demo.dir\src\gltfLoader\gltf.i
+	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\28503\Desktop\gltf-occlusionculling\src\gltfLoader\gltf.cpp > CMakeFiles\demo.dir\src\gltfLoader\gltf.i
 
 CMakeFiles/demo.dir/src/gltfLoader/gltf.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/src/gltfLoader/gltf.s"
-	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\x86_64-w64-mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\28503\Desktop\gltfLoader-Test1\src\gltfLoader\gltf.cpp -o CMakeFiles\demo.dir\src\gltfLoader\gltf.s
+	C:\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\28503\Desktop\gltf-occlusionculling\src\gltfLoader\gltf.cpp -o CMakeFiles\demo.dir\src\gltfLoader\gltf.s
 
 # Object files for target demo
 demo_OBJECTS = \
@@ -114,7 +114,7 @@ demo.exe: libmyJNI.dll.a
 demo.exe: CMakeFiles/demo.dir/linklibs.rsp
 demo.exe: CMakeFiles/demo.dir/objects1.rsp
 demo.exe: CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable demo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable demo.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\demo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,6 +126,6 @@ CMakeFiles/demo.dir/clean:
 .PHONY : CMakeFiles/demo.dir/clean
 
 CMakeFiles/demo.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\28503\Desktop\gltfLoader-Test1 C:\Users\28503\Desktop\gltfLoader-Test1 C:\Users\28503\Desktop\gltfLoader-Test1\build C:\Users\28503\Desktop\gltfLoader-Test1\build C:\Users\28503\Desktop\gltfLoader-Test1\build\CMakeFiles\demo.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\28503\Desktop\gltf-occlusionculling C:\Users\28503\Desktop\gltf-occlusionculling C:\Users\28503\Desktop\gltf-occlusionculling\build2 C:\Users\28503\Desktop\gltf-occlusionculling\build2 C:\Users\28503\Desktop\gltf-occlusionculling\build2\CMakeFiles\demo.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/demo.dir/depend
 
